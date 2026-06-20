@@ -1,3 +1,49 @@
+## Algorithm_Gen
+
+### Core systems and Programming Languages
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
+![Zig](https://img.shields.io/badge/Zig-%23F7A41D.svg?style=for-the-badge&logo=zig&logoColor=white)
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
+
+### Cybersecurity & Offensive Auditing
+![Security Auditing](https://img.shields.io/badge/Security_Auditing-D32121?style=for-the-badge&logo=security&logoColor=white)
+![Malware Analysis](https://img.shields.io/badge/Malware_Analysis-8A2BE2?style=for-the-badge&logo=adguard&logoColor=white)
+![Offensive Security](https://img.shields.io/badge/Offensive_Security-000000?style=for-the-badge&logo=kali-linux&logoColor=white)
+
+### Low-Level Infrastructure & Performance
+![eBPF](https://img.shields.io/badge/eBPF-FFDD54?style=for-the-badge&logo=linux&logoColor=black)
+![DPDK](https://img.shields.io/badge/DPDK-00599C?style=for-the-badge&logo=c&logoColor=white)
+![io_uring](https://img.shields.io/badge/io__uring-232F3E?style=for-the-badge&logo=linux&logoColor=white)
+![Solana](https://img.shields.io/badge/Solana-14F195?style=for-the-badge&logo=solana&logoColor=black)
+![Monad](https://img.shields.io/badge/Monad-8338EC?style=for-the-badge&logo=web3.js&logoColor=white)
+
+### DevOps, Infrastructure & Build Tools
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Makefile](https://img.shields.io/badge/Make-008080?style=for-the-badge&logo=gnu&logoColor=white)
+
+### Platform Support & Hardware Architecture
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+![macOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0)
+
+### Cloud Providers
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![GCP](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
+![iCloud](https://img.shields.io/badge/iCloud-3693F3?style=for-the-badge&logo=icloud&logoColor=white)
+
+### Artificial Intelligence & Quantum
+![Google Gemini](https://img.shields.io/badge/Google%20Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991.svg?style=for-the-badge&logo=openai&logoColor=white)
+![Post-Quantum Ready](https://img.shields.io/badge/Post--Quantum_Ready-0052CC?style=for-the-badge&logo=quantconnect&logoColor=white)
+
+### Client Frameworks
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
+![PyQt](https://img.shields.io/badge/PyQt-41CD52?style=for-the-badge&logo=qt&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+
 ## What is this about?
 
 It is a hybrid AI-driven algorithm generation engine that outputs highly efficient Python code. It acts as an orchestration pipeline that takes user prompts (in any language), translates them to English, and routes them through a decision matrix. If a user requests standard cryptographic algorithms (like AES, China's SM4, or Russia's GOST), it bypasses the AI to return a deterministic, hardcoded blueprint. For novel requests, it uses the OpenAI API to generate custom algorithms, running them through a local sandbox and formatting optimizer.
