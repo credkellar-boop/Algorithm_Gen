@@ -18,6 +18,7 @@ class TestAlgorithmGenCore(unittest.TestCase):
     def test_code_optimizer(self):
         # We use a single-line string with newline characters (\n) 
         # to avoid all indentation/triple-quote issues.
-        raw_markdown = "Here is your code:\n
-http://googleusercontent.com/immersive_entry_chip/0
+
+        
+        raw_markdown = "Here is your code:\nhttp://googleusercontent.com/immersive_entry_chip/0"
 
