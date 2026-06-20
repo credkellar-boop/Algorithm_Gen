@@ -18,6 +18,8 @@ class TestAlgorithmGenCore(unittest.TestCase):
         self.assertEqual(target, "SM4_China")
 
     def test_code_optimizer(self):
-        # Confirm that markdown delimiters are stripped correctly
-        raw_markdown = "Here is your code:\n
-http://googleusercontent.com/immersive_entry_chip/0
+        # Confirm that markdown delimiters are stripped correctly using triple quotes
+        raw_markdown = """Here is your code:
+```python
+def run():
+    return True
