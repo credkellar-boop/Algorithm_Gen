@@ -1,0 +1,24 @@
+# Environments & Secrets
+.env
+.venv
+env/
+venv/
+
+# Git
+.git
+.gitignore
+.github/
+
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Rust compiled artifacts
+target/
+Cargo.lock
+
+# Documentation
+README.md
+CONTRIBUTING.md
+  
