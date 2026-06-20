@@ -1,19 +1,11 @@
-name: Automated Release
-
-on:
-  push:
-    tags:
-      - 'v*'
-
 jobs:
-  release:
+  build-and-publish:
     runs-on: ubuntu-latest
-    
     permissions:
-      contents: write
-      
+      contents: write # This is the crucial addition
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
       
       - name: Build and Publish Release
         uses: softprops/action-gh-release@v1
