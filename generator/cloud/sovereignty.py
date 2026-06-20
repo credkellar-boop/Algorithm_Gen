@@ -1,27 +1,27 @@
 def get_compliant_cloud_region(algorithm_standard: str) -> dict:
     """
-    Maps national algorithm standards to legally compliant Sovereign Cloud regions.
+    Maps national and international standards to corresponding cloud environments 
+    to ensure local sovereignty compliance.
     """
-    localization_rules = {
+    compliance_matrix = {
         "SM4_China": {
-            "aws_region": "cn-northwest-1", # AWS Ningxia (operated by NWCD)
-            "gcp_region": "asia-east2",     # GCP (Hong Kong/Taiwan local partners)
-            "sovereignty_level": "Strict Data Localization"
+            "aws_region": "cn-northwest-1",
+            "gcp_region": "asia-east2",
+            "sovereignty_level": "Strict Sovereignty (China Cybersecurity Law Enforced)"
         },
         "GOST_Russia": {
-            "aws_region": "restricted_use_local_provider", # Foreign hyperscalers are restricted
-            "gcp_region": "restricted_use_local_provider",
-            "sovereignty_level": "Strict National Isolation"
+            "aws_region": "restricted",
+            "gcp_region": "restricted",
+            "sovereignty_level": "Air-Gapped / Isolated National Infrastructure"
         },
         "AES_International": {
-            "aws_region": "us-east-1",      # Global Standard Public Cloud
+            "aws_region": "us-east-1",
             "gcp_region": "us-central1",
-            "sovereignty_level": "International Public Cloud"
+            "sovereignty_level": "Standard Global Public Cloud"
         }
     }
     
-    return localization_rules.get(
+    return compliance_matrix.get(
         algorithm_standard, 
-        {"aws_region": "eu-central-1", "sovereignty_level": "Default / GDPR Compliant"}
+        {"aws_region": "us-east-1", "gcp_region": "us-central1", "sovereignty_level": "General"}
     )
-  
