@@ -1,4 +1,7 @@
 ## Algorithm_Gen
+<p align="center">
+  <img src="1781996688194.png" alt="Profile Image" width="400"/>
+</p>
 
 ### Core systems and Programming Languages
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
