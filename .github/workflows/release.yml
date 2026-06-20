@@ -8,6 +8,11 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    
+    # Add this permissions block to authorize the release creation
+    permissions:
+      contents: write
+      
     steps:
       - uses: actions/checkout@v3
       
@@ -15,4 +20,3 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           generate_release_notes: true
-          
