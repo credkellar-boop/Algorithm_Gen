@@ -1,20 +1,16 @@
 name: Release
-
 on:
   push:
-    tags:
-      - 'v0.1.0
-
+    branches: ['main']
 jobs:
-  build-and-publish:
+  release:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      
-      - name: Build and Publish Release
-        uses: softprops/action-gh-release@v1
+      - uses: actions/checkout@v4
+      - uses: softprops/action-gh-release@v1
         with:
+          tag_name: v0.1.${{ github.run_number }}
+          name: Release v0.1.${{ github.run_number }}
           generate_release_notes: true
