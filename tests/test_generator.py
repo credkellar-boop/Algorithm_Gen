@@ -16,8 +16,8 @@ class TestAlgorithmGenCore(unittest.TestCase):
         self.assertEqual(target, "SM4_China")
 
     def test_code_optimizer(self):
-        # We define the string at the same indentation level as the code
-        raw_markdown = """Here is your code:
-```python
-def run():
-    return True
+        # We use a single-line string with newline characters (\n) 
+        # to avoid all indentation/triple-quote issues.
+        raw_markdown = "Here is your code:\n
+http://googleusercontent.com/immersive_entry_chip/0
+
