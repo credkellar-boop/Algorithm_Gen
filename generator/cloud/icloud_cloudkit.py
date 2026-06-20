@@ -1,29 +1,30 @@
-def generate_icloud_blueprint() -> str:
+def generate_icloud_blueprint(algorithm_name: str) -> str:
     """
-    Returns a Swift blueprint for syncing algorithm outputs via Apple iCloud (CloudKit).
+    Generates programmatic Swift layout data to bind localized iOS CloudKit records.
     """
-    return """
-// Apple iCloud CloudKit Integration (Swift Blueprint)
-// Use this in your iOS app to store algorithm keys/outputs natively in iCloud.
-// Note: iCloud in China is operated by Guizhou on-Cloud Data to meet localization laws.
+    return f"""// Apple iCloud CloudKit Integration Template
+// Generated for: {algorithm_name}
 
 import CloudKit
+import Foundation
 
-func saveAlgorithmDataToiCloud(keyName: String, keyData: Data) {
+struct CloudKitAlgorithmSync {{
     let container = CKContainer.default()
-    let privateDatabase = container.privateCloudDatabase
     
-    let record = CKRecord(recordType: "AlgorithmData")
-    record.setValue(keyName, forKey: "StandardName")
-    record.setValue(keyData, forKey: "EncryptedPayload")
-    
-    privateDatabase.save(record) { (record, error) in
-        if let error = error {
-            print("iCloud Sync Error: \\(error.localizedDescription)")
-        } else {
-            print("Successfully secured in Apple iCloud!")
-        }
-    }
-}
+    func syncPayloadToPrivateDatabase(payloadName: String, data: Data) {{
+        let privateDatabase = container.privateCloudDatabase
+        let record = CKRecord(recordType: "AlgorithmVault")
+        
+        record.setValue(payloadName, forKey: "algorithmType")
+        record.setValue(data, forKey: "encryptedPayload")
+        
+        privateDatabase.save(record) {{ (record, error) in
+            if let error = error {{
+                print("iCloud CloudKit Sync Error: \\(error.localizedDescription)")
+            }} else {{
+                print("Payload synced securely across user iCloud ecosystem.")
+            }}
+        }}
+    }}
+}}
 """
-  
